@@ -114,8 +114,8 @@ autodoc_pydantic_field_signature_prefix = "param"
 autodoc_member_order = "groupwise"
 autoclass_content = "both"
 autodoc_typehints_format = "short"
+autodoc_typehints = "both"
 
-# autodoc_typehints = "description"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["templates"]
 
@@ -146,6 +146,7 @@ partners = [
     (p.name, p.name.replace("-", "_") + "_api_reference")
     for p in partners_dir.iterdir()
 ]
+partners = sorted(partners)
 
 html_context = {
     "display_github": True,  # Integrate GitHub

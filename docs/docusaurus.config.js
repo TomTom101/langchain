@@ -59,6 +59,10 @@ const config = {
               },
             },
             {
+              test: /\.ya?ml$/,
+              use: 'yaml-loader'
+            },
+            {
               test: /\.ipynb$/,
               loader: "raw-loader",
               resolve: {
@@ -178,6 +182,10 @@ const config = {
             position: "left",
             items: [
               {
+                to: "/docs/people/",
+                label: "People",
+              },
+              {
                 to: "/docs/packages",
                 label: "Versioning",
               },
@@ -188,7 +196,7 @@ const config = {
               },
               {
                 to: "/docs/contributing",
-                label: "Developer's guide",
+                label: "Contributing",
               },
               {
                 type: "docSidebar",
@@ -205,7 +213,7 @@ const config = {
               },
               {
                 to: "/docs/additional_resources/youtube",
-                label: "YouTube videos"
+                label: "YouTube"
               },
             ]
           },
@@ -297,6 +305,10 @@ const config = {
               {
                 label: "Blog",
                 href: "https://blog.langchain.dev",
+              },
+              {
+                label: "YouTube",
+                href: "https://www.youtube.com/@LangChain",
               },
             ],
           },
